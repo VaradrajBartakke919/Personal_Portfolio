@@ -1,0 +1,36 @@
+/* Custom overrides – Tailwind handles the rest via CDN */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: subtle focus ring for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* Header dims when scrolled to bottom */
+#site-header.header-dim {
+  opacity: 0.72;
+}
+
+/* Project modal visible */
+#project-modal.flex {
+  display: flex;
+}
+
+/* FAQ details marker hidden */
+#faq details summary::-webkit-details-marker {
+  display: none;
+}
+#faq details summary {
+  list-style: none;
+}
+/* FAQ icon: + when closed, − when open */
+#faq details .faq-icon::after {
+  content: '+';
+}
+#faq details[open] .faq-icon::after {
+  content: '−';
+}
