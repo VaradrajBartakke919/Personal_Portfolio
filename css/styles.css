@@ -34,3 +34,11 @@ button:focus-visible {
 #faq details[open] .faq-icon::after {
   content: '−';
 }
+
+/* Projects "More" sliding section */
+#projects-more-section.projects-more-open {
+  max-height: 2000px !important;
+}
+#projects-more-btn[aria-expanded="true"] .projects-more-chevron {
+  transform: rotate(180deg);
+}
